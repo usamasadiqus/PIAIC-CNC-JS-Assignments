@@ -1,12 +1,5 @@
-function submitForm(e) {
-    e.preventDefault();
-    var firstName = document.forms["userForm"][0];
-    var lastName = document.forms["userForm"][1];
-    var age = document.forms["userForm"][2];
+var firstName = prompt("Enter first name", "Type Here...");
+var lastName = prompt("Enter last name", "Type Here...");
+var age = +prompt("Enter age name", "Type Here...");
 
-    alert('Hello ' + firstName.value + ' ' + lastName.value + ', You are ' + age.value + ' years old');
-
-    firstName.value = "";
-    lastName.value = "";
-    age.value = "";
-}
+alert('Hello ' + firstName + ' ' + lastName + ', You are ' + age + ' years old');
